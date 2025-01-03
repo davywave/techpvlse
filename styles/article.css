@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #4f6df5;
+    color: white;
+    text-align: center;
+    padding: 1.5em 1em;
+}
+
+header h1 {
+    margin: 0.2em 0;
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.back-home {
+    display: inline-block;
+    margin-top: 1em;
+    color: white;
+    text-decoration: underline;
+}
+
+.back-home:hover {
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+}
+
+.article-content h2 {
+    margin-top: 1.5em;
+    font-size: 1.5em;
+    color: #4f6df5;
+}
+
+.article-content h3 {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.article-content p {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+.article-content ul {
+    margin: 1em 0;
+    padding-left: 1.2em;
+}
+
+.article-content ul li {
+    margin: 0.5em 0;
+    font-size: 1em;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 2em;
+    padding: 1em;
+    background: #f4f4f4;
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 0.5em;
+    }
+
+    .article-content h2 {
+        font-size: 1.3em;
+    }
+
+    .article-content p, .article-content ul li {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .back-home {
+        font-size: 0.9em;
+    }
+
+    .article-content h2 {
+        font-size: 1.1em;
+    }
+
+    .article-content p, .article-content ul li {
+        font-size: 0.9em;
+    }
+}
