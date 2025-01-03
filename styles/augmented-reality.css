@@ -1,0 +1,158 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f9fafc;
+    color: #2c3e50;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-weight: 400;
+}
+
+/* Back to Home Link */
+nav {
+    text-align: left;
+    margin: 1rem 15%;
+}
+
+.back-home {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #1a73e8;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.back-home:hover {
+    color: #0f5bb5;
+}
+
+/* Article Content */
+.article-content {
+    padding: 2rem 15%;
+}
+
+.article-content .banner-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.article-content h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #6a11cb;
+    font-weight: 600;
+}
+
+.article-content h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: #444;
+    font-weight: 600;
+}
+
+.article-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    background: #2c3e50;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .article-content {
+        padding: 1.5rem 5%;
+    }
+
+    .article-content h2 {
+        font-size: 1.7rem;
+    }
+
+    .article-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .article-content p {
+        font-size: 1rem;
+    }
+
+    nav {
+        margin: 1rem 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .article-content {
+        padding: 1rem 3%;
+    }
+
+    .article-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .article-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .article-content p {
+        font-size: 0.9rem;
+    }
+
+    nav {
+        margin: 1rem 3%;
+    }
+
+    .back-home {
+        font-size: 0.9rem;
+    }
+}
