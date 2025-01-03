@@ -1,421 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JGT2VZQY4K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JGT2VZQY4K');
-</script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechBlog | Innovation at Your Fingertips</title>
+    <title>TechPulse - Discover the Future with Us</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* General Styles */
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: #fff;
-}
-
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 50px;
-  background: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-header .logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-header .logo span {
-  color: #00ffcc;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-  color: #00ffcc;
-}
-
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: url('assets/3d-background.jpg') no-repeat center center/cover;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-}
-
-.hero h1 {
-  font-size: 48px;
-}
-
-.hero span {
-  color: #00ffcc;
-}
-
-.hero p {
-  margin-top: 10px;
-  font-size: 18px;
-}
-
-.hero .btn {
-  margin-top: 20px;
-  display: inline-block;
-  background: #00ffcc;
-  color: #000;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-/* Featured Articles */
-.articles {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.articles h2 {
-  margin-bottom: 30px;
-}
-
-.article-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.article-card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  width: 300px;
-  text-align: left;
-  transition: transform 0.3s;
-}
-
-.article-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-.article-card h3 {
-  padding: 10px;
-  font-size: 18px;
-}
-
-.article-card p {
-  padding: 0 10px;
-  font-size: 14px;
-}
-
-.article-card .read-more {
-  display: block;
-  padding: 10px;
-  text-align: center;
-  background: #00ffcc;
-  text-decoration: none;
-  color: #000;
-}
-
-.article-card:hover {
-  transform: translateY(-5px);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 10px 0;
-  background: #111;
-}
-/* Article Page */
-.article-content {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.article-content h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-  color: #00ffcc;
-}
-
-.article-content h2 {
-  margin-top: 20px;
-  font-size: 24px;
-}
-
-.article-content p {
-  margin: 10px 0;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.article-content ul {
-  margin: 10px 0;
-  padding-left: 20px;
-}
-
-.article-content ul li {
-  margin-bottom: 5px;
-}
-
-/* Article Image */
-.article-content img {
-  width: 100%;
-  height: auto;
-  margin: 20px 0;
-  border-radius: 8px;
-}
-/* Base Styles (for larger screens like desktops) */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom, #1e1e2f, #3e3e5e);
-  color: #fff;
-}
-
-header {
-  background: #2c2c54;
-  color: #fff;
-  padding: 10px 20px;
-  text-align: center;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.article-content {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background: #2c2c54;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.article-content h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #4caf50;
-}
-
-.article-content h2 {
-  margin-top: 20px;
-  color: #ff9800;
-}
-
-.article-content p {
-  margin-bottom: 15px;
-}
-
-.article-content ul {
-  margin: 10px 0;
-  padding-left: 20px;
-}
-
-.cta {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.cta a {
-  display: inline-block;
-  background: #4caf50;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer {
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
-  background: #2c2c54;
-  color: #fff;
-}
-
-/* ----- Responsive Design ----- */
-
-/* Tablets (768px and below) */
-@media (max-width: 768px) {
-  nav ul {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  nav ul li {
-      margin: 5px 0;
-  }
-
-  .article-content {
-      padding: 15px;
-      max-width: 90%;
-  }
-
-  .article-content h1 {
-      font-size: 1.8rem;
-  }
-
-  .cta a {
-      font-size: 0.9rem;
-      padding: 8px 16px;
-  }
-}
-
-/* Mobile Phones (480px and below) */
-@media (max-width: 480px) {
-  header {
-      padding: 5px 10px;
-  }
-
-  nav ul {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  nav ul li {
-      margin: 5px 0;
-  }
-
-  .article-content {
-      padding: 10px;
-      max-width: 95%;
-  }
-
-  .article-content h1 {
-      font-size: 1.5rem;
-  }
-
-  .article-content h2 {
-      font-size: 1.2rem;
-  }
-
-  .article-content p {
-      font-size: 0.9rem;
-  }
-
-  .cta a {
-      font-size: 0.8rem;
-      padding: 6px 12px;
-  }
-
-  footer {
-      font-size: 0.8rem;
-  }
-}
-    </style>
-    
-
-    </style>
 </head>
 <body>
+   
+
     <!-- Navigation Bar -->
-    <header>
-        <div class="logo">⚙️ Tech<span>Blog</span></div>
+    <header class="navbar">
+        <img src="">
+        <div class="logo">TechPulse</div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="pages/articles">Articles</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Search</a></li>
             </ul>
         </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to <span>TechBlog</span></h1>
-        <p>Your one-stop destination for the latest tech trends, updates, and innovations.</p>
-        <a href="articles.html" class="btn">Explore Articles</a>
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+        <h1>Discover the Future with Us</h1>
+        <p>This website was built to inspire innovation and share knowledge.</p>
+        <img src="banner.jpg" alt="Hero Banner">
     </section>
 
-    <!-- Featured Articles Section -->
+    <!-- Articles Section -->
 <section class="articles">
-  <h2>📚 Featured Articles</h2>
-  <div class="article-container">
-      <div class="article-card">
-          <img src="assets/ai.jpg" alt="AI">
-          <h3>The Rise of AI in Everyday Tech</h3>
-          <p>Discover how AI is transforming industries...</p>
-          <a href="ai.jpg.jpg" class="read-more">Read More</a>
-      </div>
-      <div class="article-card">
-          <img src="cloud.jpg" alt="Cloud">
-          <h3>Cloud Computing: Future of Data</h3>
-          <p>How the cloud is revolutionizing data storage...</p>
-          <a href="cloud.html" class="read-more">Read More</a>
-      </div>
-      <div class="article-card">
-          <img src="cybersecurity-concept-user-privacy-security-600nw-2137304159.webp" alt="Cybersecurity">
-          <h3>Cybersecurity in a Digital World</h3>
-          <p>Protecting your data in an online ecosystem...</p>
-          <a href="cybersecurity.html" class="read-more">Read More</a>
-      </div>
-      <div class="article-card">
-          <img src="assets/blockchain.jpg" alt="Blockchain">
-          <h3>The Power of Blockchain Technology</h3>
-          <p>Decentralization, security, and transparency...</p>
-          <a href="pages/articles/blockchain.html" class="read-more">Read More</a>
-      </div>
-      <div class="article-card">
-          <img src="assets/mobile-tech.jpg" alt="Mobile Tech">
-          <h3>Mobile Technology: The Future in Your Hands</h3>
-          <p>Exploring the latest trends in mobile innovation...</p>
-          <a href="pages/articles/mobile-tech.html" class="read-more">Read More</a>
-      </div>
-  </div>
+    <h2>Our Articles</h2>
+    <div class="articles-container">
+        <a href="smart-home.html" class="article-card">
+            <img src="innov.png" alt="Smart Home Innovations">
+            <h3>Smart Home Innovations: 2025 Tech Trends Revealed</h3>
+            <p>Discover the latest trends in smart home technology...</p>
+        </a>
+        <a href="augmented-reality.html" class="article-card">
+            <img src="Reality.jpg" alt="Augmented Reality">
+            <h3>Augmented Reality: The Future of Tech</h3>
+            <p>How AR is shaping industries and user experiences...</p>
+        </a>
+        <a href="healthcare-tech.html" class="article-card">
+            <img src="healthcare.webp" alt="Healthcare Technology">
+            <h3>Revolutionizing Healthcare: Medical Technology in 2025</h3>
+            <p>Advancements in medical tech improving lives...</p>
+        </a>
+        <!-- Placeholder Card -->
+        <div class="article-card placeholder-card">
+            <img src="cloud.jpg">
+            <h3>More Articles Coming Soon</h3>
+            <p>Stay tuned for upcoming exciting content and updates!</p>
+        </div>
+    </div>
 </section>
 
+    </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 TechBlog. All Rights Reserved.</p>
+        <p>&copy; 2024 TechPulse. All Rights Reserved. 500 Terry Francine Street, San Francisco, CA 94158</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
